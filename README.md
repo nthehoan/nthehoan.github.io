@@ -2,8 +2,7 @@
 
 A polished, responsive academic website built as a zero-dependency static site for GitHub Pages.
 
-![Website preview](assets/site-preview.png)
-
+![Website preview](site-preview.png)
 ## Included
 
 - Responsive one-page layout
