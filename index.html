@@ -44,7 +44,7 @@
 
   <meta
     property="og:image"
-    content="og-card.png"
+    content="apple.jpg"
   >
 
   <meta
@@ -70,14 +70,20 @@
 
   <script>
     (function () {
-      const saved = localStorage.getItem('hn-theme');
+
+      const saved =
+        localStorage.getItem('hn-theme');
 
       const prefersDark =
         window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches;
+        window.matchMedia(
+          '(prefers-color-scheme: dark)'
+        ).matches;
 
       document.documentElement.dataset.theme =
-        saved || (prefersDark ? 'dark' : 'light');
+        saved ||
+        (prefersDark ? 'dark' : 'light');
+
     })();
   </script>
 
@@ -112,12 +118,14 @@
 
 <body>
 
+
   <a
     class="skip-link"
     href="#main"
   >
     Skip to content
   </a>
+
 
 
   <!-- =====================================================
@@ -130,6 +138,7 @@
   >
 
     <div class="container nav-shell">
+
 
       <a
         class="brand"
@@ -151,6 +160,7 @@
       </a>
 
 
+
       <button
         class="nav-toggle"
         type="button"
@@ -167,6 +177,7 @@
         <span></span>
 
       </button>
+
 
 
       <nav
@@ -192,6 +203,7 @@
         </a>
 
       </nav>
+
 
 
       <div class="nav-actions">
@@ -255,6 +267,7 @@
   <main id="main">
 
 
+
     <!-- =====================================================
          HERO
     ====================================================== -->
@@ -265,6 +278,7 @@
 
 
         <div class="hero-copy reveal">
+
 
           <p class="eyebrow">
             Geometric analysis · University of Chicago
@@ -305,7 +319,6 @@
               Publications
             </a>
 
-
             <a
               class="button button-outline"
               href="Hoan_Nguyen_CV.pdf"
@@ -321,11 +334,25 @@
             aria-label="Research interests"
           >
 
-            <li>Aubry–Mather theory</li>
-            <li>Minimal surfaces</li>
-            <li>Min–max theory</li>
-            <li>Stable norms</li>
-            <li>Geometric flows</li>
+            <li>
+              Aubry–Mather theory
+            </li>
+
+            <li>
+              Minimal surfaces
+            </li>
+
+            <li>
+              Min–max theory
+            </li>
+
+            <li>
+              Stable norms
+            </li>
+
+            <li>
+              Geometric flows
+            </li>
 
           </ul>
 
@@ -333,267 +360,28 @@
 
 
 
-        <div
-          class="hero-visual reveal"
-          aria-label="Abstract mathematical visualization of foliations and stable norms"
-        >
+        <!-- Hero photo -->
 
-          <div class="visual-card">
+        <div class="hero-visual reveal">
 
+          <div class="visual-card hero-photo-card">
 
-            <div class="visual-label">
-
-              <span>
-                Research geometry
-              </span>
-
-              <span>
-                𝕋<sup>n</sup>
-              </span>
-
-            </div>
-
-
-            <svg
-              class="foliation-art"
-              viewBox="0 0 640 560"
-              role="img"
-              aria-labelledby="art-title art-desc"
+            <img
+              class="hero-photo"
+              src="apple.jpg"
+              alt="Hoan Nguyen standing beside an apple tree"
             >
-
-              <title id="art-title">
-                Minimal foliations on a torus
-              </title>
-
-              <desc id="art-desc">
-                An abstract family of curved leaves, a lattice,
-                and a stable norm contour.
-              </desc>
-
-
-              <defs>
-
-                <linearGradient
-                  id="leafGradient"
-                  x1="0"
-                  y1="0"
-                  x2="1"
-                  y2="1"
-                >
-
-                  <stop
-                    offset="0"
-                    stop-color="currentColor"
-                    stop-opacity="0.18"
-                  ></stop>
-
-                  <stop
-                    offset="1"
-                    stop-color="currentColor"
-                    stop-opacity="0.72"
-                  ></stop>
-
-                </linearGradient>
-
-
-                <filter
-                  id="softGlow"
-                  x="-30%"
-                  y="-30%"
-                  width="160%"
-                  height="160%"
-                >
-
-                  <feGaussianBlur
-                    stdDeviation="9"
-                  ></feGaussianBlur>
-
-                </filter>
-
-              </defs>
-
-
-              <g class="grid-lines">
-
-                <path
-                  d="M88 72V488M164 72V488M240 72V488M316 72V488M392 72V488M468 72V488M544 72V488"
-                ></path>
-
-                <path
-                  d="M62 112H578M62 188H578M62 264H578M62 340H578M62 416H578"
-                ></path>
-
-              </g>
-
-
-              <g
-                class="torus-shadow"
-                filter="url(#softGlow)"
-              >
-
-                <ellipse
-                  cx="332"
-                  cy="272"
-                  rx="218"
-                  ry="136"
-                ></ellipse>
-
-              </g>
-
-
-              <g class="torus-outline">
-
-                <ellipse
-                  cx="332"
-                  cy="272"
-                  rx="232"
-                  ry="148"
-                ></ellipse>
-
-                <ellipse
-                  cx="332"
-                  cy="272"
-                  rx="101"
-                  ry="58"
-                ></ellipse>
-
-                <path
-                  d="M103 255c49-80 128-118 229-118s181 38 230 118"
-                ></path>
-
-                <path
-                  d="M103 289c49 80 128 118 229 118s181-38 230-118"
-                ></path>
-
-              </g>
-
-
-              <g
-                class="leaves"
-                fill="none"
-                stroke="url(#leafGradient)"
-              >
-
-                <path
-                  d="M104 223c62-42 139-61 228-61s167 19 230 61"
-                ></path>
-
-                <path
-                  d="M99 247c64-35 142-51 233-51s169 16 235 51"
-                ></path>
-
-                <path
-                  d="M97 272c65-27 143-39 235-39s171 12 237 39"
-                ></path>
-
-                <path
-                  d="M99 297c64-20 142-29 233-29s169 9 235 29"
-                ></path>
-
-                <path
-                  d="M104 321c62-12 139-18 228-18s167 6 230 18"
-                ></path>
-
-                <path
-                  d="M119 346c57-5 128-8 213-8s157 3 215 8"
-                ></path>
-
-              </g>
-
-
-              <g class="lattice-points">
-
-                <circle
-                  cx="164"
-                  cy="188"
-                  r="4"
-                ></circle>
-
-                <circle
-                  cx="240"
-                  cy="264"
-                  r="4"
-                ></circle>
-
-                <circle
-                  cx="316"
-                  cy="340"
-                  r="4"
-                ></circle>
-
-                <circle
-                  cx="392"
-                  cy="188"
-                  r="4"
-                ></circle>
-
-                <circle
-                  cx="468"
-                  cy="264"
-                  r="4"
-                ></circle>
-
-              </g>
-
-
-              <g class="norm-contour">
-
-                <path
-                  d="M438 93c44-18 93 6 107 51 13 43-14 85-59 94-47 9-90-21-94-67-4-34 14-65 46-78Z"
-                ></path>
-
-                <path
-                  d="M438 104c35-14 74 5 85 41 10 34-11 68-47 75-38 7-72-17-75-53-3-27 11-51 37-63Z"
-                ></path>
-
-                <circle
-                  cx="466"
-                  cy="161"
-                  r="3"
-                ></circle>
-
-              </g>
-
-
-              <g class="formula-chip">
-
-                <rect
-                  x="90"
-                  y="431"
-                  width="235"
-                  height="63"
-                  rx="18"
-                ></rect>
-
-                <text
-                  x="113"
-                  y="471"
-                >
-
-                  ΔW
-
-                  <tspan
-                    baseline-shift="sub"
-                    font-size="16"
-                  >
-                    r
-                  </tspan>
-
-                  = ω(r) − S(r)
-
-                </text>
-
-              </g>
-
-            </svg>
 
           </div>
 
         </div>
 
+
       </div>
 
     </section>
+
+
 
 
 
@@ -808,6 +596,8 @@
 
 
 
+
+
     <!-- =====================================================
          INVITED TALKS
     ====================================================== -->
@@ -926,6 +716,8 @@
 
 
 
+
+
     <!-- =====================================================
          EDUCATION
     ====================================================== -->
@@ -1037,6 +829,8 @@
 
 
 
+
+
     <!-- =====================================================
          TEACHING
     ====================================================== -->
@@ -1108,6 +902,8 @@
       </div>
 
     </section>
+
+
 
 
 
@@ -1193,6 +989,8 @@
       </div>
 
     </section>
+
+
 
 
 
