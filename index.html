@@ -3,25 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Hoan Nguyen — Geometric Analysis</title>
-  <meta name="description" content="Hoan Nguyen is a mathematics Ph.D. student at the University of Chicago working in geometric analysis, minimal surfaces, min–max theory, Aubry–Mather theory, and geometric rigidity.">
+
+  <meta
+    name="description"
+    content="Hoan Nguyen is a mathematics Ph.D. student at the University of Chicago working in geometric analysis, minimal surfaces, min–max theory, Aubry–Mather theory, and geometric rigidity."
+  >
+
   <meta name="author" content="Hoan Nguyen">
   <meta name="theme-color" content="#f7f3ec">
 
-  <meta property="og:title" content="Hoan Nguyen — Geometric Analysis">
-  <meta property="og:description" content="Research in minimal surfaces, min–max theory, Aubry–Mather theory, stable norms, and geometric rigidity.">
+  <meta
+    property="og:title"
+    content="Hoan Nguyen — Geometric Analysis"
+  >
+
+  <meta
+    property="og:description"
+    content="Research in minimal surfaces, min–max theory, Aubry–Mather theory, stable norms, and geometric rigidity."
+  >
+
   <meta property="og:type" content="website">
   <meta property="og:image" content="og-card.png">
 
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="styles.css">
+  <link
+    rel="icon"
+    href="favicon.svg"
+    type="image/svg+xml"
+  >
+
+  <link
+    rel="manifest"
+    href="site.webmanifest"
+  >
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
 
   <script>
     (function () {
       const saved = localStorage.getItem('hn-theme');
+
       const prefersDark =
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -56,19 +83,49 @@
     ]
   }
   </script>
+
 </head>
 
 <body>
 
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a
+    class="skip-link"
+    href="#main"
+  >
+    Skip to content
+  </a>
 
-  <header class="site-header" id="top">
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header
+    class="site-header"
+    id="top"
+  >
+
     <div class="container nav-shell">
 
-      <a class="brand" href="#top" aria-label="Hoan Nguyen, home">
-        <span class="brand-mark" aria-hidden="true">HN</span>
-        <span class="brand-text">Hoan Nguyen</span>
+      <a
+        class="brand"
+        href="#top"
+        aria-label="Hoan Nguyen, home"
+      >
+
+        <span
+          class="brand-mark"
+          aria-hidden="true"
+        >
+          HN
+        </span>
+
+        <span class="brand-text">
+          Hoan Nguyen
+        </span>
+
       </a>
+
 
       <button
         class="nav-toggle"
@@ -76,23 +133,42 @@
         aria-expanded="false"
         aria-controls="primary-nav"
       >
-        <span class="sr-only">Open navigation</span>
+
+        <span class="sr-only">
+          Open navigation
+        </span>
+
         <span></span>
         <span></span>
         <span></span>
+
       </button>
+
 
       <nav
         class="primary-nav"
         id="primary-nav"
         aria-label="Primary navigation"
       >
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#talks">Talks</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#publications">
+          Publications
+        </a>
+
+        <a href="#talks">
+          Talks
+        </a>
+
+        <a href="#teaching">
+          Teaching
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
       </nav>
+
 
       <div class="nav-actions">
 
@@ -102,15 +178,40 @@
           aria-label="Switch color theme"
           title="Switch color theme"
         >
-          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+
+          <svg
+            class="sun-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
+            <circle
+              cx="12"
+              cy="12"
+              r="4"
+            ></circle>
+
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"
+            ></path>
+
           </svg>
 
-          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+
+          <svg
+            class="moon-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
+            <path
+              d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"
+            ></path>
+
           </svg>
+
         </button>
+
 
         <a
           class="button button-small button-outline nav-cv"
@@ -120,13 +221,23 @@
         </a>
 
       </div>
+
     </div>
+
   </header>
+
 
   <main id="main">
 
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
     <section class="hero section-pad">
+
       <div class="container hero-grid">
+
 
         <div class="hero-copy reveal">
 
@@ -134,25 +245,41 @@
             Geometric analysis · University of Chicago
           </p>
 
-          <h1>Hoan Nguyen</h1>
+
+          <h1>
+            Hoan Nguyen
+          </h1>
+
 
           <p class="hero-lede">
-            I study minimal surfaces and foliations through variational
-            methods, dynamics, and geometric rigidity.
+            I study minimal surfaces and foliations through
+            variational methods, dynamics, and geometric rigidity.
           </p>
 
+
           <p class="hero-meta">
+
             Ph.D. student in Mathematics at the University of Chicago,
             advised by
-            <a href="https://math.uchicago.edu/~aneves/">André Neves</a>.
+
+            <a href="https://math.uchicago.edu/~aneves/">
+              André Neves
+            </a>.
+
             Expected graduation: 2027.
+
           </p>
+
 
           <div class="hero-actions">
 
-            <a class="button" href="#research">
-              Explore research
+            <a
+              class="button"
+              href="#publications"
+            >
+              Publications
             </a>
+
 
             <a
               class="button button-outline"
@@ -163,29 +290,58 @@
 
           </div>
 
+
           <ul
             class="topic-list"
             aria-label="Research interests"
           >
-            <li>Aubry–Mather theory</li>
-            <li>Minimal surfaces</li>
-            <li>Min–max theory</li>
-            <li>Stable norms</li>
-            <li>Geometric flows</li>
+
+            <li>
+              Aubry–Mather theory
+            </li>
+
+            <li>
+              Minimal surfaces
+            </li>
+
+            <li>
+              Min–max theory
+            </li>
+
+            <li>
+              Stable norms
+            </li>
+
+            <li>
+              Geometric flows
+            </li>
+
           </ul>
 
         </div>
+
+
 
         <div
           class="hero-visual reveal"
           aria-label="Abstract mathematical visualization of foliations and stable norms"
         >
+
           <div class="visual-card">
 
+
             <div class="visual-label">
-              <span>Research geometry</span>
-              <span>𝕋<sup>n</sup></span>
+
+              <span>
+                Research geometry
+              </span>
+
+              <span>
+                𝕋<sup>n</sup>
+              </span>
+
             </div>
+
 
             <svg
               class="foliation-art"
@@ -203,6 +359,7 @@
                 and a stable norm contour.
               </desc>
 
+
               <defs>
 
                 <linearGradient
@@ -212,6 +369,7 @@
                   x2="1"
                   y2="1"
                 >
+
                   <stop
                     offset="0"
                     stop-color="currentColor"
@@ -223,7 +381,9 @@
                     stop-color="currentColor"
                     stop-opacity="0.72"
                   ></stop>
+
                 </linearGradient>
+
 
                 <filter
                   id="softGlow"
@@ -232,30 +392,43 @@
                   width="160%"
                   height="160%"
                 >
-                  <feGaussianBlur stdDeviation="9"></feGaussianBlur>
+
+                  <feGaussianBlur
+                    stdDeviation="9"
+                  ></feGaussianBlur>
+
                 </filter>
 
               </defs>
 
+
               <g class="grid-lines">
 
-                <path d="M88 72V488M164 72V488M240 72V488M316 72V488M392 72V488M468 72V488M544 72V488"></path>
+                <path
+                  d="M88 72V488M164 72V488M240 72V488M316 72V488M392 72V488M468 72V488M544 72V488"
+                ></path>
 
-                <path d="M62 112H578M62 188H578M62 264H578M62 340H578M62 416H578"></path>
+                <path
+                  d="M62 112H578M62 188H578M62 264H578M62 340H578M62 416H578"
+                ></path>
 
               </g>
+
 
               <g
                 class="torus-shadow"
                 filter="url(#softGlow)"
               >
+
                 <ellipse
                   cx="332"
                   cy="272"
                   rx="218"
                   ry="136"
                 ></ellipse>
+
               </g>
+
 
               <g class="torus-outline">
 
@@ -273,11 +446,16 @@
                   ry="58"
                 ></ellipse>
 
-                <path d="M103 255c49-80 128-118 229-118s181 38 230 118"></path>
+                <path
+                  d="M103 255c49-80 128-118 229-118s181 38 230 118"
+                ></path>
 
-                <path d="M103 289c49 80 128 118 229 118s181-38 230-118"></path>
+                <path
+                  d="M103 289c49 80 128 118 229 118s181-38 230-118"
+                ></path>
 
               </g>
+
 
               <g
                 class="leaves"
@@ -285,19 +463,32 @@
                 stroke="url(#leafGradient)"
               >
 
-                <path d="M104 223c62-42 139-61 228-61s167 19 230 61"></path>
+                <path
+                  d="M104 223c62-42 139-61 228-61s167 19 230 61"
+                ></path>
 
-                <path d="M99 247c64-35 142-51 233-51s169 16 235 51"></path>
+                <path
+                  d="M99 247c64-35 142-51 233-51s169 16 235 51"
+                ></path>
 
-                <path d="M97 272c65-27 143-39 235-39s171 12 237 39"></path>
+                <path
+                  d="M97 272c65-27 143-39 235-39s171 12 237 39"
+                ></path>
 
-                <path d="M99 297c64-20 142-29 233-29s169 9 235 29"></path>
+                <path
+                  d="M99 297c64-20 142-29 233-29s169 9 235 29"
+                ></path>
 
-                <path d="M104 321c62-12 139-18 228-18s167 6 230 18"></path>
+                <path
+                  d="M104 321c62-12 139-18 228-18s167 6 230 18"
+                ></path>
 
-                <path d="M119 346c57-5 128-8 213-8s157 3 215 8"></path>
+                <path
+                  d="M119 346c57-5 128-8 213-8s157 3 215 8"
+                ></path>
 
               </g>
+
 
               <g class="lattice-points">
 
@@ -333,11 +524,16 @@
 
               </g>
 
+
               <g class="norm-contour">
 
-                <path d="M438 93c44-18 93 6 107 51 13 43-14 85-59 94-47 9-90-21-94-67-4-34 14-65 46-78Z"></path>
+                <path
+                  d="M438 93c44-18 93 6 107 51 13 43-14 85-59 94-47 9-90-21-94-67-4-34 14-65 46-78Z"
+                ></path>
 
-                <path d="M438 104c35-14 74 5 85 41 10 34-11 68-47 75-38 7-72-17-75-53-3-27 11-51 37-63Z"></path>
+                <path
+                  d="M438 104c35-14 74 5 85 41 10 34-11 68-47 75-38 7-72-17-75-53-3-27 11-51 37-63Z"
+                ></path>
 
                 <circle
                   cx="466"
@@ -346,6 +542,7 @@
                 ></circle>
 
               </g>
+
 
               <g class="formula-chip">
 
@@ -361,14 +558,18 @@
                   x="113"
                   y="471"
                 >
+
                   ΔW
+
                   <tspan
                     baseline-shift="sub"
                     font-size="16"
                   >
                     r
                   </tspan>
+
                   = ω(r) − S(r)
+
                 </text>
 
               </g>
@@ -376,263 +577,26 @@
             </svg>
 
           </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <section
-      class="section-pad section-soft"
-      id="research"
-    >
-      <div class="container">
-
-        <div class="section-heading reveal">
-
-          <p class="eyebrow">
-            Current work
-          </p>
-
-          <h2>Research</h2>
-
-          <p>
-            My recent work connects geometric measure theory,
-            variational dynamics, and rigidity questions on tori.
-          </p>
-
-        </div>
-
-
-        <div class="research-grid">
-
-          <article class="research-card reveal">
-
-            <div
-              class="paper-visual paper-visual-gap"
-              aria-hidden="true"
-            >
-
-              <span class="visual-symbol">
-                ΔW
-              </span>
-
-              <svg viewBox="0 0 360 180">
-
-                <path d="M18 132C81 47 121 42 177 96c46 44 91 42 165-55"></path>
-
-                <path d="M18 146C85 75 126 70 180 112c45 35 88 35 162-40"></path>
-
-                <circle
-                  cx="178"
-                  cy="96"
-                  r="6"
-                ></circle>
-
-              </svg>
-
-            </div>
-
-            <div class="card-kicker">
-
-              <span>Preprint</span>
-
-              <time datetime="2026">
-                2026
-              </time>
-
-            </div>
-
-            <h3>
-              A min–max gap characterization of minimal foliations on the torus
-            </h3>
-
-            <p>
-              Introduces a Mather-type energy barrier through
-              Almgren–Pitts min–max theory, characterizes minimal
-              foliations in totally irrational directions, and detects
-              non-minimizing minimal hypersurfaces inside lamination gaps.
-            </p>
-
-            <div class="paper-links">
-
-              <a href="https://arxiv.org/abs/2605.12428">
-                arXiv
-              </a>
-
-              <a href="min-max-gap-characterization.pdf">
-                PDF
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <article class="research-card reveal">
-
-            <div
-              class="paper-visual paper-visual-norm"
-              aria-hidden="true"
-            >
-
-              <span class="visual-symbol">
-                ∥·∥<sub>st</sub>
-              </span>
-
-              <svg viewBox="0 0 360 180">
-
-                <ellipse
-                  cx="180"
-                  cy="92"
-                  rx="108"
-                  ry="64"
-                ></ellipse>
-
-                <ellipse
-                  cx="180"
-                  cy="92"
-                  rx="75"
-                  ry="44"
-                ></ellipse>
-
-                <path d="M180 20v144M48 92h264"></path>
-
-                <path d="M102 50c46 19 110 19 156 0M102 134c46-19 110-19 156 0"></path>
-
-              </svg>
-
-            </div>
-
-            <div class="card-kicker">
-
-              <span>Preprint</span>
-
-              <time datetime="2026">
-                2026
-              </time>
-
-            </div>
-
-            <h3>
-              Minimal foliations, codimension-one stable norms,
-              and a question of Bangert
-            </h3>
-
-            <p>
-              Computes an exact stable norm for cohomogeneity-one metrics,
-              gives nonflat counterexamples to Bangert’s foliation question
-              in every dimension at least three, and exhibits nonflat
-              three-tori with Euclidean codimension-one stable norm.
-            </p>
-
-            <div class="paper-links">
-
-              <a href="https://arxiv.org/abs/2608.18428">
-                arXiv
-              </a>
-
-              <a href="minimal-foliations-stable-norms-bangert.pdf">
-                PDF
-              </a>
-
-            </div>
-
-          </article>
-
-
-          <article class="research-card reveal">
-
-            <div
-              class="paper-visual paper-visual-kam"
-              aria-hidden="true"
-            >
-
-              <span class="visual-symbol">
-                Φ<sub>u</sub>(P+y)
-              </span>
-
-              <svg viewBox="0 0 360 180">
-
-                <g>
-                  <path d="M30 148 142 32M78 162 190 46M128 162 240 46M178 162 290 46M228 162 338 50"></path>
-                </g>
-
-                <path
-                  class="accent-path"
-                  d="M24 112c62-28 116-26 164 4 51 32 98 29 150-13"
-                ></path>
-
-              </svg>
-
-            </div>
-
-            <div class="card-kicker">
-
-              <span>Manuscript</span>
-
-              <time datetime="2026">
-                2026
-              </time>
-
-            </div>
-
-            <h3>
-              Stability of Diophantine minimal foliations
-              in higher codimension
-            </h3>
-
-            <p>
-              Extends Moser’s stability theorem to arbitrary codimension.
-              A matrix-valued Wronskian current and a tame Nash–Moser
-              inverse preserve the full Diophantine foliation under small
-              periodic metric perturbations.
-            </p>
-
-            <div class="paper-links">
-
-              <a href="diophantine-minimal-foliations-higher-codimension.pdf">
-                PDF
-              </a>
-
-            </div>
-
-          </article>
-
-        </div>
-
-
-        <div class="research-note reveal">
-
-          <div>
-
-            <p class="eyebrow">
-              Research themes
-            </p>
-
-            <h3>
-              Variational barriers, foliations, and rigidity
-            </h3>
-
-          </div>
-
-          <p>
-            I am particularly interested in how minimizing objects organize
-            an ambient manifold, when laminations close up to foliations,
-            and which global geometric data force—or fail to force—rigidity.
-          </p>
 
         </div>
 
       </div>
+
     </section>
 
+
+
+    <!-- =====================================================
+         PUBLICATIONS
+    ====================================================== -->
 
     <section
       class="section-pad"
       id="publications"
     >
+
       <div class="container narrow">
+
 
         <div class="section-heading reveal">
 
@@ -649,11 +613,13 @@
 
         <ol class="publication-list">
 
+
           <li class="publication-item reveal">
 
             <div class="pub-year">
               2026
             </div>
+
 
             <div class="pub-content">
 
@@ -665,6 +631,7 @@
               <p class="pub-meta">
                 Preprint.
               </p>
+
 
               <div class="inline-links">
 
@@ -683,22 +650,26 @@
           </li>
 
 
+
           <li class="publication-item reveal">
 
             <div class="pub-year">
               2026
             </div>
 
+
             <div class="pub-content">
 
               <h3>
-                A min–max gap characterization of minimal foliations
-                on the torus
+                A min–max gap characterization of minimal
+                foliations on the torus
               </h3>
+
 
               <p class="pub-meta">
                 Preprint.
               </p>
+
 
               <div class="inline-links">
 
@@ -717,11 +688,13 @@
           </li>
 
 
+
           <li class="publication-item reveal">
 
             <div class="pub-year">
               2026
             </div>
+
 
             <div class="pub-content">
 
@@ -730,9 +703,11 @@
                 in higher codimension
               </h3>
 
+
               <p class="pub-meta">
                 Manuscript.
               </p>
+
 
               <div class="inline-links">
 
@@ -747,11 +722,13 @@
           </li>
 
 
+
           <li class="publication-item reveal">
 
             <div class="pub-year">
               2026
             </div>
+
 
             <div class="pub-content">
 
@@ -760,11 +737,13 @@
                 monolayer water ice
               </h3>
 
+
               <p class="pub-meta">
                 With Lien Le.
                 <em>Computational and Theoretical Chemistry</em>
                 1257, 115660.
               </p>
+
 
               <div class="inline-links">
 
@@ -779,11 +758,13 @@
           </li>
 
 
+
           <li class="publication-item reveal">
 
             <div class="pub-year">
               2023
             </div>
+
 
             <div class="pub-content">
 
@@ -791,10 +772,12 @@
                 Kähler–Ricci flow and conformal submersion
               </h3>
 
+
               <p class="pub-meta">
                 <em>Mediterranean Journal of Mathematics</em>
                 20(5).
               </p>
+
 
               <div class="inline-links">
 
@@ -808,17 +791,26 @@
 
           </li>
 
+
         </ol>
 
       </div>
+
     </section>
 
+
+
+    <!-- =====================================================
+         TALKS
+    ====================================================== -->
 
     <section
       class="section-pad section-dark"
       id="talks"
     >
+
       <div class="container">
+
 
         <div class="section-heading reveal">
 
@@ -835,17 +827,25 @@
 
         <div class="talk-grid">
 
+
           <article class="talk-card reveal">
 
             <div class="date-block">
 
-              <span>Sep</span>
+              <span>
+                Sep
+              </span>
 
-              <strong>28</strong>
+              <strong>
+                28
+              </strong>
 
-              <small>2026</small>
+              <small>
+                2026
+              </small>
 
             </div>
+
 
             <div>
 
@@ -866,17 +866,25 @@
           </article>
 
 
+
           <article class="talk-card reveal">
 
             <div class="date-block">
 
-              <span>Sep</span>
+              <span>
+                Sep
+              </span>
 
-              <strong>21</strong>
+              <strong>
+                21
+              </strong>
 
-              <small>2026</small>
+              <small>
+                2026
+              </small>
 
             </div>
+
 
             <div>
 
@@ -897,17 +905,25 @@
           </article>
 
 
+
           <article class="talk-card reveal">
 
             <div class="date-block">
 
-              <span>Apr</span>
+              <span>
+                Apr
+              </span>
 
-              <strong>21</strong>
+              <strong>
+                21
+              </strong>
 
-              <small>2026</small>
+              <small>
+                2026
+              </small>
 
             </div>
+
 
             <div>
 
@@ -916,25 +932,34 @@
               </h3>
 
               <p>
-                “A min–max gap characterization of minimal foliations
-                on a torus and applications.”
+                “A min–max gap characterization of minimal
+                foliations on a torus and applications.”
               </p>
 
             </div>
 
           </article>
 
+
         </div>
 
       </div>
+
     </section>
 
+
+
+    <!-- =====================================================
+         EDUCATION
+    ====================================================== -->
 
     <section
       class="section-pad"
       id="education"
     >
+
       <div class="container two-column-layout">
+
 
         <div class="section-heading reveal">
 
@@ -950,6 +975,7 @@
 
 
         <div class="timeline">
+
 
           <article class="timeline-item reveal">
 
@@ -974,6 +1000,7 @@
           </article>
 
 
+
           <article class="timeline-item reveal">
 
             <div class="timeline-marker"></div>
@@ -993,6 +1020,7 @@
           </article>
 
 
+
           <article class="timeline-item reveal">
 
             <div class="timeline-marker"></div>
@@ -1010,24 +1038,38 @@
             </p>
 
             <p class="muted">
+
               Senior thesis:
-              <em>Kähler–Ricci flow and conformal submersion</em>.
+              <em>
+                Kähler–Ricci flow and conformal submersion
+              </em>.
+
               Advisor: Frederick Tsz-Ho Fong.
+
             </p>
 
           </article>
 
+
         </div>
 
       </div>
+
     </section>
 
+
+
+    <!-- =====================================================
+         TEACHING
+    ====================================================== -->
 
     <section
       class="section-pad section-soft"
       id="teaching"
     >
+
       <div class="container">
+
 
         <div class="section-heading reveal">
 
@@ -1043,6 +1085,7 @@
 
 
         <div class="teaching-grid">
+
 
           <article class="teaching-card reveal">
 
@@ -1062,6 +1105,7 @@
           </article>
 
 
+
           <article class="teaching-card reveal">
 
             <span class="teaching-index">
@@ -1079,17 +1123,26 @@
 
           </article>
 
+
         </div>
 
       </div>
+
     </section>
 
+
+
+    <!-- =====================================================
+         AWARDS
+    ====================================================== -->
 
     <section
       class="section-pad"
       id="awards"
     >
+
       <div class="container awards-shell reveal">
+
 
         <div>
 
@@ -1106,6 +1159,7 @@
 
         <div class="award-list">
 
+
           <div class="award-item">
 
             <span
@@ -1114,6 +1168,7 @@
             >
               ●
             </span>
+
 
             <div>
 
@@ -1130,6 +1185,7 @@
           </div>
 
 
+
           <div class="award-item">
 
             <span
@@ -1138,6 +1194,7 @@
             >
               ◆
             </span>
+
 
             <div>
 
@@ -1153,17 +1210,26 @@
 
           </div>
 
+
         </div>
 
       </div>
+
     </section>
 
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
 
     <section
       class="section-pad contact-section"
       id="contact"
     >
+
       <div class="container contact-card reveal">
+
 
         <div>
 
@@ -1192,6 +1258,7 @@
             nth@uchicago.edu
           </a>
 
+
           <button
             class="button button-outline copy-email"
             type="button"
@@ -1200,12 +1267,18 @@
             Copy email
           </button>
 
+
           <a
             class="text-link"
             href="https://mathematics.uchicago.edu/people/profile/hoan-the-nguyen/"
           >
+
             UChicago profile
-            <span aria-hidden="true">↗</span>
+
+            <span aria-hidden="true">
+              ↗
+            </span>
+
           </a>
 
         </div>
@@ -1227,19 +1300,33 @@
 
         </div>
 
+
       </div>
+
     </section>
+
 
   </main>
 
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
 
   <footer class="site-footer">
 
     <div class="container footer-inner">
 
+
       <p>
-        © <span id="current-year">2026</span> Hoan Nguyen.
+        ©
+        <span id="current-year">
+          2026
+        </span>
+        Hoan Nguyen.
       </p>
+
 
       <div>
 
@@ -1253,9 +1340,11 @@
 
       </div>
 
+
     </div>
 
   </footer>
+
 
 
   <div
@@ -1264,6 +1353,7 @@
     aria-live="polite"
     aria-atomic="true"
   ></div>
+
 
   <script src="script.js"></script>
 
