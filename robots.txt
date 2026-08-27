@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nthehoan.github.io/sitemap.xml
