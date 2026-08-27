@@ -2,7 +2,6 @@
 <html lang="en" data-theme="light">
 
 <head>
-
   <meta charset="utf-8">
 
   <meta
@@ -70,20 +69,14 @@
 
   <script>
     (function () {
-
-      const saved =
-        localStorage.getItem('hn-theme');
+      const saved = localStorage.getItem('hn-theme');
 
       const prefersDark =
         window.matchMedia &&
-        window.matchMedia(
-          '(prefers-color-scheme: dark)'
-        ).matches;
+        window.matchMedia('(prefers-color-scheme: dark)').matches;
 
       document.documentElement.dataset.theme =
-        saved ||
-        (prefersDark ? 'dark' : 'light');
-
+        saved || (prefersDark ? 'dark' : 'light');
     })();
   </script>
 
@@ -118,14 +111,12 @@
 
 <body>
 
-
   <a
     class="skip-link"
     href="#main"
   >
     Skip to content
   </a>
-
 
 
   <!-- =====================================================
@@ -138,7 +129,6 @@
   >
 
     <div class="container nav-shell">
-
 
       <a
         class="brand"
@@ -160,7 +150,6 @@
       </a>
 
 
-
       <button
         class="nav-toggle"
         type="button"
@@ -177,7 +166,6 @@
         <span></span>
 
       </button>
-
 
 
       <nav
@@ -205,7 +193,6 @@
       </nav>
 
 
-
       <div class="nav-actions">
 
         <button
@@ -220,17 +207,11 @@
             viewBox="0 0 24 24"
             aria-hidden="true"
           >
-
-            <circle
-              cx="12"
-              cy="12"
-              r="4"
-            ></circle>
+            <circle cx="12" cy="12" r="4"></circle>
 
             <path
               d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"
             ></path>
-
           </svg>
 
 
@@ -239,11 +220,9 @@
             viewBox="0 0 24 24"
             aria-hidden="true"
           >
-
             <path
               d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"
             ></path>
-
           </svg>
 
         </button>
@@ -263,9 +242,7 @@
   </header>
 
 
-
   <main id="main">
-
 
 
     <!-- =====================================================
@@ -278,7 +255,6 @@
 
 
         <div class="hero-copy reveal">
-
 
           <p class="eyebrow">
             Geometric analysis · University of Chicago
@@ -334,43 +310,34 @@
             aria-label="Research interests"
           >
 
-            <li>
-              Aubry–Mather theory
-            </li>
-
-            <li>
-              Minimal surfaces
-            </li>
-
-            <li>
-              Min–max theory
-            </li>
-
-            <li>
-              Stable norms
-            </li>
-
-            <li>
-              Geometric flows
-            </li>
+            <li>Aubry–Mather theory</li>
+            <li>Minimal surfaces</li>
+            <li>Min–max theory</li>
+            <li>Stable norms</li>
+            <li>Geometric flows</li>
 
           </ul>
 
         </div>
 
 
-
-        <!-- Hero photo -->
-
         <div class="hero-visual reveal">
 
-          <div class="visual-card hero-photo-card">
+          <div class="hero-photo-wrap">
 
-            <img
-              class="hero-photo"
-              src="apple.jpg"
-              alt="Hoan Nguyen standing beside an apple tree"
-            >
+            <div class="visual-card hero-photo-card">
+
+              <img
+                class="hero-photo"
+                src="apple.jpg"
+                alt="Hoan Nguyen standing beside an apple tree"
+              >
+
+            </div>
+
+            <p class="photo-credit">
+              Photo credit: Lien Le
+            </p>
 
           </div>
 
@@ -380,9 +347,6 @@
       </div>
 
     </section>
-
-
-
 
 
     <!-- =====================================================
@@ -395,7 +359,6 @@
     >
 
       <div class="container narrow">
-
 
         <div class="section-heading reveal">
 
@@ -447,7 +410,6 @@
           </li>
 
 
-
           <li class="publication-item reveal">
 
             <div class="pub-year">
@@ -482,7 +444,6 @@
           </li>
 
 
-
           <li class="publication-item reveal">
 
             <div class="pub-year">
@@ -513,7 +474,6 @@
           </li>
 
 
-
           <li class="publication-item reveal">
 
             <div class="pub-year">
@@ -528,15 +488,9 @@
               </h3>
 
               <p class="pub-meta">
-
                 With Lien Le.
-
-                <em>
-                  Computational and Theoretical Chemistry
-                </em>
-
+                <em>Computational and Theoretical Chemistry</em>
                 1257, 115660.
-
               </p>
 
               <div class="inline-links">
@@ -552,7 +506,6 @@
           </li>
 
 
-
           <li class="publication-item reveal">
 
             <div class="pub-year">
@@ -566,13 +519,8 @@
               </h3>
 
               <p class="pub-meta">
-
-                <em>
-                  Mediterranean Journal of Mathematics
-                </em>
-
+                <em>Mediterranean Journal of Mathematics</em>
                 20(5).
-
               </p>
 
               <div class="inline-links">
@@ -595,9 +543,6 @@
     </section>
 
 
-
-
-
     <!-- =====================================================
          INVITED TALKS
     ====================================================== -->
@@ -608,7 +553,6 @@
     >
 
       <div class="container narrow">
-
 
         <div class="section-heading reveal">
 
@@ -651,7 +595,6 @@
           </li>
 
 
-
           <li class="publication-item reveal">
 
             <div class="pub-year">
@@ -675,7 +618,6 @@
             </div>
 
           </li>
-
 
 
           <li class="publication-item reveal">
@@ -715,9 +657,6 @@
     </section>
 
 
-
-
-
     <!-- =====================================================
          EDUCATION
     ====================================================== -->
@@ -728,7 +667,6 @@
     >
 
       <div class="container two-column-layout">
-
 
         <div class="section-heading reveal">
 
@@ -769,7 +707,6 @@
           </article>
 
 
-
           <article class="timeline-item reveal">
 
             <div class="timeline-marker"></div>
@@ -787,7 +724,6 @@
             </p>
 
           </article>
-
 
 
           <article class="timeline-item reveal">
@@ -828,9 +764,6 @@
     </section>
 
 
-
-
-
     <!-- =====================================================
          TEACHING
     ====================================================== -->
@@ -841,7 +774,6 @@
     >
 
       <div class="container">
-
 
         <div class="section-heading reveal">
 
@@ -869,13 +801,39 @@
               Instructor
             </h3>
 
-            <p>
-              Elementary Functions and Calculus I–III,
-              Calculus I–II, and Linear Algebra.
-            </p>
+            <ul class="teaching-course-list">
+
+              <li>
+                Elementary Functions and Calculus I
+              </li>
+
+              <li>
+                Elementary Functions and Calculus II
+              </li>
+
+              <li>
+                Elementary Functions and Calculus III
+              </li>
+
+              <li>
+                Calculus I
+              </li>
+
+              <li>
+                Calculus II
+              </li>
+
+              <li>
+                Linear Algebra
+              </li>
+
+              <li>
+                Mathematical Method for Economic Analysis
+              </li>
+
+            </ul>
 
           </article>
-
 
 
           <article class="teaching-card reveal">
@@ -888,11 +846,21 @@
               Teaching assistant
             </h3>
 
-            <p>
-              Accelerated Analysis,
-              Introduction to Dynamical Systems,
-              and Functional Analysis.
-            </p>
+            <ul class="teaching-course-list">
+
+              <li>
+                Accelerated Analysis
+              </li>
+
+              <li>
+                Introduction to Dynamical Systems
+              </li>
+
+              <li>
+                Functional Analysis
+              </li>
+
+            </ul>
 
           </article>
 
@@ -902,9 +870,6 @@
       </div>
 
     </section>
-
-
-
 
 
     <!-- =====================================================
@@ -917,7 +882,6 @@
     >
 
       <div class="container awards-shell reveal">
-
 
         <div>
 
@@ -959,7 +923,6 @@
           </div>
 
 
-
           <div class="award-item">
 
             <span
@@ -991,9 +954,6 @@
     </section>
 
 
-
-
-
     <!-- =====================================================
          CONTACT
     ====================================================== -->
@@ -1004,7 +964,6 @@
     >
 
       <div class="container contact-card reveal">
-
 
         <div>
 
@@ -1081,7 +1040,6 @@
 
 
   </main>
-
 
 
   <!-- =====================================================
